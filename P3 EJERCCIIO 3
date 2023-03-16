@@ -1,0 +1,73 @@
+#include <iostream>
+#define Fila 25
+#define Columna 25
+using namespace std;
+void Matriz(int A[Fila][Columna],int V[Fila],int c,int f);
+void Ascendente(int V[Fila],int c,int f);
+int main()
+{   int A[Fila][Columna],V[Fila],c,f,t;
+    cout<<"Digite la fila de la matriz: "<<endl;
+    cin>>c;
+    cout<<"Digite la columna de la matriz: "<<endl;
+    cin>>f;
+    cout<<"Digite los valores dentro de la matriz: "<<endl;
+    Matriz(A,V,c,f);
+    cout<<"El vector combinado con la matriz es: "<<endl;
+    Ascendente(V,c,f);
+   
+    
+    
+
+    return 0;
+}
+void Matriz(int A[Fila][Columna],int V[Fila],int c,int f){
+   int t;
+    for(int i=0;i<f;i++){
+        for(int j=0;j<c;j++){
+            cin>>A[i][j];
+        }
+    }
+    cout<<"Digite el tamano del vector: "<<endl;
+    cin>>t;
+    
+        if(t<=c*f){
+        for(int i=0;i<f;i++){
+            for(int j=0;j<c;j++){
+                V[j]=A[i][j];
+                    
+            }
+        }
+    }
+}
+void Ascendente(int V[Fila],int c,int f){
+    int aux=0;
+    for(int i=0;i<=c*f;i++){
+        for(int j=0;j<c*f;j++){
+            if(V[j]>V[j+1]){
+                aux=V[j];
+                V[j]=V[j+1];
+                V[j+1]=aux;
+   
+    }
+}
+}
+
+     
+     for(int i=0;i<=c*f;i++){
+         cout<<V[i]<<" ";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
