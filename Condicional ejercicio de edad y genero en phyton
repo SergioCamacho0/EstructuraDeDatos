@@ -1,0 +1,16 @@
+edad=int(input("Ingrese la edad: "))
+genero=input("Ingrese el genero: " )
+if(genero == 'masculino' ):
+    if(edad>=18 and edad<=55):
+        print("es mayor de edad no jubilado")
+    elif(edad<=18):
+        print("Es menor de edad")
+    else:
+        print("Es jubilado")
+else:
+    if (edad<18):
+         print ("es menor de edad")
+    elif (edad>=18 and edad<=60):
+        print("es mayor de edad no jubilada")
+    else:
+        print("Es jubilada")
