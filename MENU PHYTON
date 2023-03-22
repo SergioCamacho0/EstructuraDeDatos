@@ -1,0 +1,36 @@
+while True:
+    print(" ----Menu---- ")
+	print("1.Inc corporal")
+    print("2.edad y genero de una persona")
+    print("3.Potencia de un numero")
+    print("4.Salir")
+    op = int(input("Ingrese que desea: "))
+    if(op ==1):
+        nombre=input("Ingresa su nombre: ")
+
+        peso = float(input("Introduce tu peso: "))
+        altura = float(input("Introduce tu altura: "))
+        a = peso/(altura**2)
+        print(nombre," tu inc es ",a)
+    elif(op== 2):
+        edad=int(input("Ingrese la edad: "))
+        genero=input("Ingrese el genero: " )
+        if(genero == 'masculino' ):
+            if(edad>=18 and edad<=55):
+            print("es mayor de edad no jubilado")
+            elif(edad<=18):
+            print("Es menor de edad")
+            else:
+            print("Es jubilado")
+        else:
+            if (edad<18):
+            print ("es menor de edad")
+            elif (edad>=18 and edad<=60):
+            print("es mayor de edad no jubilada")
+            else:
+            print("Es jubilada")
+    else(op == 3):
+        print:
+    if(op == 4):
+        break;
+    
