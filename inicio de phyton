@@ -1,0 +1,9 @@
+print("Hola mundo")
+nombre=input("Ingresa su nombre: ")
+print("Hola mundo ",nombre)
+
+horas = float(input("Introduce tus horas de trabajo: "))
+coste = float(input("Introduce lo que cobras por hora: "))
+paga = coste * horas
+print("Tu paga es ",paga)
+print(nombre," Tu paga es: ",paga)
