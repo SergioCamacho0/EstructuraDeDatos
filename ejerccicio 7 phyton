@@ -1,0 +1,7 @@
+nombre=input("Ingresa su nombre: ")
+
+peso = float(input("Introduce tu peso: "))
+altura = float(input("Introduce tu altura: "))
+a = peso/(altura**2)
+print(nombre," tu inc es ",a)
+
