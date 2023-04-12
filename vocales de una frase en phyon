@@ -1,0 +1,34 @@
+vocales = []
+x=0
+y=0
+z=0
+d=0
+e=0
+
+palabras = input("introduce la palabra que desea ver todas las vocales: ")
+vocales.append(palabras)
+for i in palabras:
+    if i.isalpha():
+        vocales.append(i)
+print (vocales)
+for i in vocales:
+    if (i== 'a'):
+        x=x+1
+print ("Existen ",x, "a en la frase")
+for i in vocales:
+    if (i== 'e'):
+        y=y+1
+print ("Existen ",y, "e en la frase")
+for i in vocales:
+    if (i== 'i'):
+        z=z+1
+print ("Existen ",z, "i en la frase")
+for i in vocales:
+    if (i== 'o'):
+        d=d+1
+print ("Existen ",d, "o en la frase")
+for i in vocales:
+    if (i== 'u'):
+        e=e+1
+print ("Existen ",e, "u en la frase")
+
